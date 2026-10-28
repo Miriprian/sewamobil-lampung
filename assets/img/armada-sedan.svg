@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Ilustrasi mobil sedan">
+  <rect width="800" height="500" fill="#eff3f7"/>
+  <circle cx="400" cy="248" r="172" fill="#e6ecf2"/>
+  <ellipse cx="402" cy="368" rx="290" ry="15" fill="#dae2ea"/>
+  <g fill="none" stroke="#c9d4de" stroke-width="2" stroke-linecap="round">
+    <path d="M96 128h84"/><path d="M620 128h84"/>
+    <path d="M96 400h60"/><path d="M644 400h60"/>
+  </g>
+  <path d="M96 352v-52c0-18 12-30 32-34l100-16 72-54c12-14 28-22 46-22h162c22 0 38 8 50 24l54 52 52 12c26 6 42 20 42 40v50z" fill="#103a63"/>
+  <path d="M318 244l34-50h94v50z" fill="#dbe7f3"/>
+  <path d="M460 194h78l26 50h-104z" fill="#dbe7f3"/>
+  <path d="M452 194v-4h10v4z" fill="#103a63" opacity=".4"/>
+  <path d="M140 268h520" stroke="#0a2540" stroke-width="3" opacity=".2"/>
+  <path d="M454 238v114" stroke="#0a2540" stroke-width="3" opacity=".35"/>
+  <rect x="670" y="276" width="26" height="18" rx="7" fill="#f7d9a4"/>
+  <rect x="98" y="272" width="22" height="32" rx="7" fill="#c9503f"/>
+  <rect x="136" y="300" width="56" height="9" rx="4.5" fill="#0a2540" opacity=".35"/>
+  <rect x="560" y="300" width="56" height="9" rx="4.5" fill="#0a2540" opacity=".35"/>
+  <circle cx="212" cy="352" r="50" fill="#22303c"/>
+  <circle cx="212" cy="352" r="24" fill="#dfe7ee"/>
+  <circle cx="212" cy="352" r="9" fill="#8d9aa7"/>
+  <circle cx="602" cy="352" r="50" fill="#22303c"/>
+  <circle cx="602" cy="352" r="24" fill="#dfe7ee"/>
+  <circle cx="602" cy="352" r="9" fill="#8d9aa7"/>
+</svg>

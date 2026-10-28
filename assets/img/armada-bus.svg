@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Ilustrasi mobil bus">
+  <rect width="800" height="500" fill="#eff3f7"/>
+  <circle cx="400" cy="252" r="180" fill="#e6ecf2"/>
+  <ellipse cx="406" cy="382" rx="304" ry="15" fill="#dae2ea"/>
+  <g fill="none" stroke="#c9d4de" stroke-width="2" stroke-linecap="round">
+    <path d="M88 130h76"/><path d="M636 130h76"/>
+    <path d="M88 404h58"/><path d="M654 404h58"/>
+  </g>
+  <path d="M92 360V176c0-22 16-36 40-36h476c34 0 54 12 66 38l18 40c44 10 62 30 62 62v80z" fill="#0f4c81"/>
+  <g fill="#dbe7f3">
+    <rect x="140" y="164" width="82" height="52" rx="6"/>
+    <rect x="236" y="164" width="82" height="52" rx="6"/>
+    <rect x="332" y="164" width="82" height="52" rx="6"/>
+    <rect x="428" y="164" width="82" height="52" rx="6"/>
+    <path d="M524 164h60c22 0 34 8 40 24l14 28h-114z"/>
+  </g>
+  <path d="M120 240h620" stroke="#0a2540" stroke-width="3" opacity=".22"/>
+  <path d="M120 300h620" stroke="#0a2540" stroke-width="2" opacity=".14"/>
+  <rect x="132" y="316" width="140" height="11" rx="5.5" fill="#0a2540" opacity=".26"/>
+  <rect x="690" y="272" width="24" height="20" rx="7" fill="#f7d9a4"/>
+  <rect x="94" y="268" width="22" height="34" rx="7" fill="#c9503f"/>
+  <circle cx="196" cy="360" r="44" fill="#22303c"/>
+  <circle cx="196" cy="360" r="21" fill="#dfe7ee"/>
+  <circle cx="196" cy="360" r="8" fill="#8d9aa7"/>
+  <circle cx="596" cy="360" r="44" fill="#22303c"/>
+  <circle cx="596" cy="360" r="21" fill="#dfe7ee"/>
+  <circle cx="596" cy="360" r="8" fill="#8d9aa7"/>
+</svg>

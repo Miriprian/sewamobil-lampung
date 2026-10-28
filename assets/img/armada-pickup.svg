@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Ilustrasi mobil pickup">
+  <rect width="800" height="500" fill="#eff3f7"/>
+  <circle cx="400" cy="248" r="170" fill="#e6ecf2"/>
+  <ellipse cx="404" cy="372" rx="288" ry="15" fill="#dae2ea"/>
+  <g fill="none" stroke="#c9d4de" stroke-width="2" stroke-linecap="round">
+    <path d="M92 128h82"/><path d="M626 128h82"/>
+    <path d="M92 400h58"/><path d="M650 400h58"/>
+  </g>
+  <path d="M92 354v-58c0-20 14-34 36-38l96-16 44-46c12-16 30-24 50-24h104c22 0 36 8 48 26l44 46 74 14c30 6 46 22 46 50v46z" fill="#1a4d7c"/>
+  <path d="M282 222l34-48h86v48z" fill="#dbe7f3"/>
+  <path d="M410 174h70l24 48h-94z" fill="#dbe7f3"/>
+  <path d="M406 174v-4h10v4z" fill="#1a4d7c" opacity=".4"/>
+  <path d="M100 268h640" stroke="#0a2540" stroke-width="3" opacity=".2"/>
+  <path d="M96 278h600v-46H440l-14 46z" fill="#f4f8fb"/>
+  <path d="M96 278h600" stroke="#0a2540" stroke-width="3" opacity=".18"/>
+  <path d="M456 250v46" stroke="#0a2540" stroke-width="3" opacity=".3"/>
+  <rect x="682" y="280" width="24" height="18" rx="7" fill="#f7d9a4"/>
+  <rect x="94" y="276" width="22" height="32" rx="7" fill="#c9503f"/>
+  <rect x="132" y="300" width="54" height="9" rx="4.5" fill="#0a2540" opacity=".35"/>
+  <circle cx="204" cy="354" r="50" fill="#22303c"/>
+  <circle cx="204" cy="354" r="24" fill="#dfe7ee"/>
+  <circle cx="204" cy="354" r="9" fill="#8d9aa7"/>
+  <circle cx="614" cy="354" r="50" fill="#22303c"/>
+  <circle cx="614" cy="354" r="24" fill="#dfe7ee"/>
+  <circle cx="614" cy="354" r="9" fill="#8d9aa7"/>
+</svg>

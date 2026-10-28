@@ -1,0 +1,111 @@
+# =============================================================================
+#  Sewa Mobil Murah Lampung — konfigurasi Apache (shared hosting / cPanel)
+#  File ini opsional, tapi sangat disarankan aktifkan.
+# =============================================================================
+
+# --- Halaman error -----------------------------------------------------------
+ErrorDocument 404 /404.html
+DirectoryIndex index.html
+
+# =============================================================================
+#  URL BERSIH (pretty URL) — WAJIB AKTIF
+#  Supaya alamat situs tampil ringkas tanpa ".html":
+#    /armada   /cara-sewa   /tentang   /kontak   /kredit-foto
+# =============================================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1) Halaman depan: /index.html dan /index -> /  (301)
+  RewriteRule ^index\.html$ / [R=301,L]
+  RewriteRule ^index$ / [R=301,L]
+
+  # 2) URL lama berakhiran .html -> arahkan ke URL bersih (301)
+  #    Link yang sudah pernah disalin orang otomatis jadi satu versi.
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+  RewriteCond %{REQUEST_URI} !^/404\.html$ [NC]
+  RewriteRule ^ /%1 [R=301,L]
+
+  # 3) Buang garis miring di akhir -> URL tanpa garis miring (301)
+  #    /armada/  ->  /armada
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # 4) URL bersih -> file .html
+  RewriteRule ^armada/?$ armada.html [L]
+  RewriteRule ^cara-pesan/?$ /cara-sewa [R=301,L]
+  RewriteRule ^cara-sewa/?$ cara-sewa.html [L]
+  RewriteRule ^tentang/?$ tentang.html [L]
+  RewriteRule ^kontak/?$ kontak.html [L]
+  RewriteRule ^kredit-foto/?$ kredit-foto.html [L]
+</IfModule>
+
+# Kalau hosting tidak punya mod_rewrite, hapus blok di atas dan pakai tautan
+# berakhiran .html (situs tetap berfungsi, hanya URL-nya lebih panjang).
+
+# --- Jangan tampilkan isi folder --------------------------------------------
+Options -Indexes
+
+# --- Cegah akses ke file konfigurasi ----------------------------------------
+<FilesMatch "^(\.htaccess|\.htpasswd|.*\.md|.*\.log)$">
+  Require all denied
+</FilesMatch>
+
+# =============================================================================
+#  PAKAI HTTPS (aktifkan setelah sertifikat SSL terpasang di hosting)
+#  Hapus tanda pagar di bawah ini.
+# =============================================================================
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} off
+#   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# =============================================================================
+#  PAKAI WWW atau TANPA WWW (pilih satu, aktifkan yang dipakai)
+# =============================================================================
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTP_HOST} ^sewamobilmurahlampung\.com$ [NC]
+#   RewriteRule ^ https://www.sewamobilmurahlampung.com%{REQUEST_URI} [L,R=301]
+#   RewriteCond %{HTTP_HOST} ^www\.sewamobilmurahlampung\.com$ [NC]
+#   RewriteRule ^ https://sewamobilmurahlampung.com%{REQUEST_URI} [L,R=301]
+# </IfModule>
+
+# --- Kompresi ----------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml application/xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml application/xml
+</IfModule>
+
+# --- Cache aset statis -------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 7 days"
+  ExpiresByType text/html                 "access plus 0 seconds"
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+  ExpiresByType image/svg+xml             "access plus 1 year"
+  ExpiresByType image/jpeg                "access plus 1 year"
+  ExpiresByType image/png                 "access plus 1 year"
+  ExpiresByType image/webp                "access plus 1 year"
+  ExpiresByType image/x-icon             "access plus 1 year"
+</IfModule>
+
+# --- Header keamanan ---------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# --- Catatan -------------------------------------------------------------------
+# Semua halaman sudah memakai URL bersih (/armada, /kontak, dst).
+# Aturan pengalihan .html -> URL bersih ada di bagian atas file ini.

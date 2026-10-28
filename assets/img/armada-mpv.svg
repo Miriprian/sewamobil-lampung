@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Ilustrasi mobil MPV">
+  <rect width="800" height="500" fill="#eff3f7"/>
+  <circle cx="400" cy="248" r="172" fill="#e6ecf2"/>
+  <ellipse cx="408" cy="372" rx="286" ry="15" fill="#dae2ea"/>
+  <g fill="none" stroke="#c9d4de" stroke-width="2" stroke-linecap="round">
+    <path d="M96 128h84"/><path d="M620 128h84"/>
+    <path d="M96 400h60"/><path d="M644 400h60"/>
+  </g>
+  <path d="M110 356V270c0-20 14-34 38-38l92-18 60-46c12-16 30-24 50-24h170c26 0 42 8 56 26l44 44 48 16c24 8 38 24 38 46v80z" fill="#1d5490"/>
+  <path d="M322 208l36-44h92v44z" fill="#dbe7f3"/>
+  <path d="M464 164h84l26 44h-110z" fill="#dbe7f3"/>
+  <path d="M158 250h500" stroke="#123a66" stroke-width="3" opacity=".25"/>
+  <path d="M458 226v130" stroke="#123a66" stroke-width="3" opacity=".35"/>
+  <rect x="672" y="252" width="26" height="20" rx="7" fill="#f7d9a4"/>
+  <rect x="112" y="248" width="22" height="34" rx="7" fill="#c9503f"/>
+  <rect x="150" y="286" width="52" height="9" rx="4.5" fill="#123a66" opacity=".35"/>
+  <rect x="548" y="286" width="52" height="9" rx="4.5" fill="#123a66" opacity=".35"/>
+  <circle cx="218" cy="356" r="52" fill="#22303c"/>
+  <circle cx="218" cy="356" r="25" fill="#dfe7ee"/>
+  <circle cx="218" cy="356" r="9" fill="#8d9aa7"/>
+  <circle cx="602" cy="356" r="52" fill="#22303c"/>
+  <circle cx="602" cy="356" r="25" fill="#dfe7ee"/>
+  <circle cx="602" cy="356" r="9" fill="#8d9aa7"/>
+</svg>
