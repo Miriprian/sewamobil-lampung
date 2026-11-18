@@ -61,7 +61,7 @@ Kalau port 8000 sedang dipakai, ganti angkanya, misalnya `-Port 8080`.
 
 ## Foto armada
 
-Katalog aktif berisi 13 model dan 13 foto referensi kendaraan. Brio, Xpander,
+Katalog aktif berisi 14 model dan 13 foto referensi kendaraan. Brio, Xpander,
 Fortuner, Avanza, Agya, dan Calya memakai foto depan serong pilihan pemilik. Sumber masing-masing
 tercatat di halaman kredit. Foto aktif diseragamkan menjadi WebP 800 x 500: ruang kosong dipangkas,
 bodi mobil tetap utuh, posisi bawah disejajarkan, dan lebar/tinggi tampak dibatasi
